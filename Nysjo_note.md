@@ -44,6 +44,8 @@
 
 散射光（ambient lighting），可以选择基于图像的多颜色强度的。来可视化分割和区分金属。从local ambient occlusion模型得到，用Monte-Carlo integration来建立。
 
+![](https://github.com/freyakniglty/SegmentationNotes/image/1.png)
+
 
 ## 3D纹理的交互界面
 
@@ -52,6 +54,9 @@
 为了避免画笔渗入小的缝隙，可以用first-hit 纹理实现种子挑选，计算local [ambient occlusion](https://baike.baidu.com/item/Ambient%20Occlusion/6216032?fr=aladdin)，然后丢掉画笔在ambient occlusion value在画笔中心超过一定阈值的绘制。
 
 附加的工具是，label选择笔，橡皮擦，填充工具，编辑工具（见2.6）。裁剪工具。
+
+![](https://github.com/freyakniglty/SegmentationNotes/image/2.png)
+
 
 
 上图。交互的基本流程。
