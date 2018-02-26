@@ -33,12 +33,12 @@
 
 根据灰度的阈值分割。这个阈值可以人工设定。阈值预设为300HU（HU是量化射线下透明度的单位），或者选择HU的下界，比如疏松的骨头。带有噪声的图像可以用高斯过滤（σ=0.6）来光滑化。可以多次使用高斯滤波器，但一般一次就够了。这个过程可利用多线程。
 
-## 等值面延迟渲染
+## 等值面[延迟渲染](https://github.com/QianMo/Game-Programmer-Study-Notes/tree/master/%E3%80%8AReal-Time%20Rendering%203rd%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/Content/BlogPost07)
 
 使用GPU加速的raycasting算法来把骨头渲染成等值面。等值面的值设定成t_bone, 这样可以可视化阈值分割。
 通过多渲染目标技术（MRT）在G-buffer (几何缓冲区)中渲染 first-hit 位置，表面的法向信息，然后计算阴影和局部光照在一个附加的通道。分割标签被储存在一个分离的3D纹理中，然后被在光照通道中的最近的sampling取得。
 
-局部光照由带有法向信息的Blinn-Phong 渲染模型计算出。
+局部光照由带有法向信息的[Blinn-Phong 渲染模型](https://www.cnblogs.com/bluebean/p/5299358.html)计算出。
 结合局部光照和阴影。阴影由first-hit纹理（通过单个方向光线的视点渲染的）得出。PCF 和Poisson disc sampling过滤。
 分割时可以关闭阴影如果它们模糊了细节。
 
@@ -49,7 +49,7 @@
 
 比起2D切片有可视化的优势。
 
-为了避免画笔渗入小的缝隙，可以用first-hit 纹理实现种子挑选，计算local ambient occlusion，然后丢掉画笔在ambient occlusion value在画笔中心超过一定阈值的绘制。
+为了避免画笔渗入小的缝隙，可以用first-hit 纹理实现种子挑选，计算local [ambient occlusion](https://baike.baidu.com/item/Ambient%20Occlusion/6216032?fr=aladdin)，然后丢掉画笔在ambient occlusion value在画笔中心超过一定阈值的绘制。
 
 附加的工具是，label选择笔，橡皮擦，填充工具，编辑工具（见2.6）。裁剪工具。
 
@@ -72,7 +72,7 @@ gi,gj是vi,vj上的灰度intensity, β 是一个变量用于决定梯度（gradi
 
 ## Iterative Solver
  
-Jacobi preconditioned conjugate gradient (CG) 
+[Jacobi preconditioned conjugate gradient (CG)](https://math-linux.com/mathematics/linear-systems/article/preconditioned-conjugate-gradient-method) 
 
 这个部分CPU太慢。最好用GPU实现。
 
