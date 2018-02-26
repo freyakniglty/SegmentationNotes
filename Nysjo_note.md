@@ -5,7 +5,7 @@
 
 现在可以利用random walks的算法，然后用3D 编辑软件修改结果。
 
-#相关
+#  相关
 
 
 	* 以模型为基础的分割方法可以用于自动分割，但是不够一般化。
@@ -18,7 +18,7 @@
 
 # 方法
 
-#步骤
+#  步骤
 
 	1. 整体性骨骼分割 collective segmentation
 
@@ -29,7 +29,7 @@
 	4. 分割编辑
 
 
-#整体性骨骼分割
+#  整体性骨骼分割
 
 根据灰度的阈值分割。这个阈值可以人工设定。阈值预设为300HU（HU是量化射线下透明度的单位），或者选择HU的下界，比如疏松的骨头。带有噪声的图像可以用高斯过滤（σ=0.6）来光滑化。可以多次使用高斯滤波器，但一般一次就够了。这个过程可利用多线程。
 
@@ -45,7 +45,7 @@
 散射光（ambient lighting），可以选择基于图像的多颜色强度的。来可视化分割和区分金属。从local ambient occlusion模型得到，用Monte-Carlo integration来建立。
 
 
-#3D纹理的交互界面
+#  3D纹理的交互界面
 
 比起2D切片有可视化的优势。
 
@@ -56,7 +56,7 @@
 
 上图。交互的基本流程。
 
-#Random Walks
+#  Random Walks
 
 在整体性分割之后，第二步就是random walks 分割。
 
@@ -70,13 +70,13 @@ gi,gj是vi,vj上的灰度intensity, β 是一个变量用于决定梯度（gradi
 
 为了避免稀疏矩阵A 成为奇异矩阵（因为有些骨头的部分是孤立的，没有与整块相接）。给对角线上的元素加一个k = 0.001 。
 
-#Iterative Solver
+#  Iterative Solver
  
 Jacobi preconditioned conjugate gradient (CG) 
 
 这个部分CPU太慢。最好用GPU实现。
 
-#分割编辑
+#  分割编辑
 
 可以进行多次运行solver和增加种子点对于第一次random walks的结果。
 volume clipping : 暂时将分割出去的部分灰度值设为t_bone - 1，再更新模型的灰度。
