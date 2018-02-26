@@ -44,7 +44,7 @@
 
 散射光（ambient lighting），可以选择基于图像的多颜色强度的。来可视化分割和区分金属。从local ambient occlusion模型得到，用Monte-Carlo integration来建立。
 
-![](https://github.com/freyakniglty/SegmentationNotes/image/1.png)
+![](https://github.com/freyakniglty/SegmentationNotes/blob/master/image/1.png)
 
 
 ## 3D纹理的交互界面
@@ -55,7 +55,7 @@
 
 附加的工具是，label选择笔，橡皮擦，填充工具，编辑工具（见2.6）。裁剪工具。
 
-![](https://github.com/freyakniglty/SegmentationNotes/image/2.png)
+![](https://github.com/freyakniglty/SegmentationNotes/blob/master/image/2.png)
 
 
 
