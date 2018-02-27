@@ -16,7 +16,7 @@ random walks的核心思想是：先选择一个集合的种子点（用户输�
 
 主要方法与步骤：假设用户选取了n个面作为种子点（面）。n是最终需要的分割区域个数。因此种子必须是撒在需要的区域中（也就是不能让两个种子点撒在同一个区域中）。设种子点(面)为<img src="http://latex.codecogs.com/gif.latex?s_1,s_2....s_n"/>。非种子面为<img src="http://latex.codecogs.com/gif.latex?f_1,f_2.....f_m"/>。因为是三角网格，对于任意一个非种子面<img src="http://latex.codecogs.com/gif.latex?f_k"/>，有三条边<img src="http://latex.codecogs.com/gif.latex?e_{k,1},e_{k,2},e_{k,3}"/> 对应了三个概率<img src="http://latex.codecogs.com/gif.latex?p_{k,1},p_{k,2},p_{k,3}"/>。这三个概率就是f_k到邻域（三个邻面）的random walk 行为。哪个概率高就去哪个邻面。
 满足以下条件
-<img src="http://latex.codecogs.com/gif.latex?$$\frac{\partial J}{\partial \theta_k^{(j)}}=\sum_{i:r(i,j)=1}{\big((\theta^{(j)})^Tx^{(i)}-y^{(i,j)}\big)x_k^{(i)}}+\lambda \theta_k^{(j)}$$" />
+<img src="http://latex.codecogs.com/gif.latex?$\frac{\partial J}{\partial \theta_k^{(j)}}=\sum_{i:r(i,j)=1}{\big((\theta^{(j)})^Tx^{(i)}-y^{(i,j)}\big)x_k^{(i)}}+\lambda \theta_k^{(j)}$" />
 
 记<img src="http://latex.codecogs.com/gif.latex?f_k"/> 到 <img src="http://latex.codecogs.com/gif.latex?s_l"/> 的概率(在先到达其他种子点之前)为 <img src="http://latex.codecogs.com/gif.latex?P^l(f_k)"/>，则有：<img src="http://latex.codecogs.com/gif.latex?P^l(s_l) = 1"/> 和 <img src="http://latex.codecogs.com/gif.latex?P^l(s_k)=0"/> 对任意 k ≠ l.
 对一个非种子点则有：
