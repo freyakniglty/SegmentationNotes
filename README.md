@@ -1,3 +1,3 @@
 # SegmentationNotes
 
-[Nysjo note](https://github.com/freyakniglty/SegmentationNotes/edit/master/Nysjo_note.md)
+[Nysjo note](https://github.com/freyakniglty/SegmentationNotes/blob/master/Nysjo_note.md)
