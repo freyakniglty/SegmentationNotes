@@ -2,5 +2,18 @@
 
 
 [Nysjo note](https://github.com/freyakniglty/SegmentationNotes/blob/master/Nysjo_note.md)
-<img src="http://latex.codecogs.com/gif.latex?\frac{\partial J}{\partial \theta_k^{(j)}}=\sum_{i:r(i,j)=1}{\big((\theta^{(j)})^Tx^{(i)}-y^{(i,j)}\big)x_k^{(i)}}+\lambda \theta_k^{(j)}" />
 
+
+<html>
+<head>
+<script type="text/javascript" src="http://latex.codecogs.com/latexit.js"></script>
+</head>
+<body>
+Here are my formulas
+<div lang="latex">1+sin(x)^2+3</div>
+<ul>
+<li lang="latex">x^2+y^2+z^2</li>
+<li>a^2+b^2</li>
+</ul>
+</body>
+</html>
