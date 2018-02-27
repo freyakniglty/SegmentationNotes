@@ -3,5 +3,5 @@
 
 [Nysjo note](https://github.com/freyakniglty/SegmentationNotes/blob/master/Nysjo_note.md)
 
-<img src="http://latex.codecogs.com/gif.latex?\\frac{\partial J}{\partial \theta_k^{(j)}}=\sum_{i:r(i,j)=1}{\big((\theta^{(j)})^Tx^{(i)}-y^{(i,j)}\big)x_k^{(i)}}+\lambda \\theta_k^{(j)}" />
+http://latex.codecogs.com/gif.latex?{{e}_{ij}}={{v}_{a}}^{T}\tanh%20({{W}_{a}}{{s}_{i-1}}+{{U}_{a}}{{h}_{j}})  
 
