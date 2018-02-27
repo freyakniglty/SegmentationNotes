@@ -14,15 +14,15 @@ random walks的核心思想是：先选择一个集合的种子点（用户输�
 
 # 交互分割
 
-主要方法与步骤：假设用户选取了n个面作为种子点（面）。n是最终需要的分割区域个数。因此种子必须是撒在需要的区域中（也就是不能让两个种子点撒在同一个区域中）。设种子点(面)为<img src="http://latex.codecogs.com/gif.latex?s_1,s_2....s_n"/>。非种子面为f_1,f_2.....f_m。因为是三角网格，对于任意一个非种子面f_k，有三条边e_{k,1},e_{k,2},e_{k,3} 对应了三个概率p_{k,1},p_{k,2},p_{k,3}。这三个概率就是f_k到邻域（三个邻面）的random walk 行为。哪个概率高就去哪个邻面。
+主要方法与步骤：假设用户选取了n个面作为种子点（面）。n是最终需要的分割区域个数。因此种子必须是撒在需要的区域中（也就是不能让两个种子点撒在同一个区域中）。设种子点(面)为<img src="http://latex.codecogs.com/gif.latex?s_1,s_2....s_n"/>。非种子面为<img src="http://latex.codecogs.com/gif.latex?f_1,f_2.....f_m"/>。因为是三角网格，对于任意一个非种子面<img src="http://latex.codecogs.com/gif.latex?f_k"/>，有三条边<img src="http://latex.codecogs.com/gif.latex?e_{k,1},e_{k,2},e_{k,3}"/> 对应了三个概率<img src="http://latex.codecogs.com/gif.latex?p_{k,1},p_{k,2},p_{k,3}"/>。这三个概率就是f_k到邻域（三个邻面）的random walk 行为。哪个概率高就去哪个邻面。
 满足以下条件
-记f_k 到 s_l 的概率(在先到达其他种子点之前)为 P^l(f_k)，则有：P^l(s_l) = 1 和 P^l(s_k)=0 对任意 k ≠ l.
+记<img src="http://latex.codecogs.com/gif.latex?f_k"/> 到 <img src="http://latex.codecogs.com/gif.latex?s_l"/> 的概率(在先到达其他种子点之前)为 <img src="http://latex.codecogs.com/gif.latex?P^l(f_k)"/>，则有：<img src="http://latex.codecogs.com/gif.latex?P^l(s_l) = 1"/> 和 <img src="http://latex.codecogs.com/gif.latex?P^l(s_k)=0"/> 对任意 k ≠ l.
 对一个非种子点则有：
 
 
 因为有m个非种子点，则可以写成 
-对与种子点相邻的非种子点，P^l(f_k) 要么是0，要么是1(如果种子点是s_l 则为1，不是s_l则为0)。因为种子点最多有三个邻面，所以B^l最多有三个1。
-因为有n个种子点，所以得到P_{mxn}即有n column的矩阵。也有B = (B_1，...,B_n)
+对与种子点相邻的非种子点，<img src="http://latex.codecogs.com/gif.latex?P^l(f_k)"/> 要么是0，要么是1(如果种子点是<img src="http://latex.codecogs.com/gif.latex?s_l"/> 则为1，不是<img src="http://latex.codecogs.com/gif.latex?s_l"/>则为0)。因为种子点最多有三个邻面，所以<img src="http://latex.codecogs.com/gif.latex?B^l"/>最多有三个1。
+因为有n个种子点，所以得到<img src="http://latex.codecogs.com/gif.latex?P_{mxn}"/>即有n column的矩阵。也有<img src="http://latex.codecogs.com/gif.latex?B = (B_1，...,B_n)"/>
 
 所以整个线性方程组为  AP=B
 
