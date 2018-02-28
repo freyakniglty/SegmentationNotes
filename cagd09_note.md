@@ -33,7 +33,7 @@ random walks的核心思想是：先选择一个集合的种子点（用户输�
 这是个稀疏线性方程组。
 
 解出来的P后，根据
-![](http://latex.codecogs.com/gif.latex?{{P}^l{f_k}}=\max_{t=1,...,n}P^t(f_k)) 
+![](http://latex.codecogs.com/gif.latex?{{P}^l{(f_k)}}=\max_{t=1,...,n}P^t(f_k)) 
 
  
 得到非种子点的标签l。也就是一个row里面取最大值。最后得到一个向量。再把对应的P找到对应的l，得到一个m维的标签向量。
