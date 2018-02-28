@@ -22,7 +22,7 @@ random walks的核心思想是：先选择一个集合的种子点（用户输�
 ![](http://latex.codecogs.com/gif.latex?{{P}^l{f_k}}=\sum_{i=1}^3p_{k,i}P^l(f_{k,i}))  
 
 
-因为有m个非种子点，则可以写成![](http://latex.codecogs.com/gif.latex?{A_{m\times{m}}}P^l=B^l) 
+因为有m个非种子点，则可以写成![](http://latex.codecogs.com/gif.latex?{A_{m\times{m}}}{P^l}={B^l}) 
 
 对与种子点相邻的非种子点，<img src="http://latex.codecogs.com/gif.latex?P^l(f_k)"/> 要么是0，要么是1(如果种子点是<img src="http://latex.codecogs.com/gif.latex?s_l"/> 则为1，不是<img src="http://latex.codecogs.com/gif.latex?s_l"/>则为0)。因为种子点最多有三个邻面，所以<img src="http://latex.codecogs.com/gif.latex?B^l"/>最多有三个1。
 因为有n个种子点，所以得到<img src="http://latex.codecogs.com/gif.latex?P_{mxn}"/>即有n column的矩阵。也有<img src="http://latex.codecogs.com/gif.latex?B = (B_1，...,B_n)"/>
