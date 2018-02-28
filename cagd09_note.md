@@ -20,7 +20,7 @@ random walks的核心思想是：先选择一个集合的种子点（用户输�
 
 记<img src="http://latex.codecogs.com/gif.latex?f_k"/> 到 <img src="http://latex.codecogs.com/gif.latex?s_l"/> 的概率(在先到达其他种子点之前)为 <img src="http://latex.codecogs.com/gif.latex?P^l(f_k)"/>，则有：<img src="http://latex.codecogs.com/gif.latex?P^l(s_l) = 1"/> 和 <img src="http://latex.codecogs.com/gif.latex?P^l(s_k)=0"/> 对任意 k ≠ l.
 对一个非种子点则有：<br />
-![](http://latex.codecogs.com/gif.latex?{{P}^l{f_k}}=\sum_{i=1}^3p_{k,i}P^l(f_{k,i}))  
+![](http://latex.codecogs.com/gif.latex?{{P}^l{(f_k)}}=\sum_{i=1}^3p_{k,i}P^l(f_{k,i}))  
 
 
 因为有m个非种子点，则可以写成![](http://latex.codecogs.com/gif.latex?{A_{m\times{m}}}{P^l}={B^l}) 
