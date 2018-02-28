@@ -40,10 +40,10 @@ random walks的核心思想是：先选择一个集合的种子点（用户输�
 ## 概率计算
 ### 图形模型
 ![](http://latex.codecogs.com/svg.latex?{d_1(f_i,f_{i,k})}=\eta[dihedral(f_i,f_{i,k})] = {\frac{\eta}{2}}{||N_i-N_{i,k}||^2}) 
-![](http://latex.codecogs.com/svg.latex?f(x)=\frac{P(x)}{Q(x)})
 
 
 dihedral angle有自带函数可以获取。η = 1.0 或者 η=0.2 取决于是凸的还是凹的。有简易的判断方法。
+![](http://latex.codecogs.com/gif.latex?d(f_i,f_{i,k})=\frac{d_1(f_i,f_{i,k})}{\overline{d_1}})  
 
  
 是均值。
