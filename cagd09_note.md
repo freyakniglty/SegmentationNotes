@@ -47,7 +47,7 @@ dihedral angle有自带函数可以获取。η = 1.0 或者 η=0.2 取决于是�
 ![](http://latex.codecogs.com/gif.latex?d(f_i,f_{i,k})=\frac{d_1(f_i,f_{i,k})}{\overline{d_1}})  
 
  
-是均值。
+<img src="http://latex.codecogs.com/gif.latex?\overline{d_1}"/>是均值。
 最后，概率公式为：
 ![](http://latex.codecogs.com/gif.latex?p_{i,k}=\|{e_{i,k}}\|\exp(-\frac{d(f_i,f_{i,k})}{\sigma}))  
 
