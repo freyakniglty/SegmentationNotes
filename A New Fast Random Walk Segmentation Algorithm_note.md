@@ -9,6 +9,7 @@
 将原图分割为细小的区域。
 
 基本思想是，计算梯度。计算每一个像素点滑向邻域梯度最小的位置的方向。显然，一些像素点可以代表区域梯度场的最小值。如果像素点都滑向同一个区域最小值点，则这些像素点形成一个区域。
+![](https://github.com/freyakniglty/SegmentationNotes/blob/master/image/toboggan.png)
 
 步骤：
 
