@@ -1,4 +1,4 @@
-# random walks的改良
+# random walks的改良(2008)
 
 1.用toboggan 算法来局部地分类有同一纹理特点的像素。然后构造一个加权图，使每个子区域成为一个结点，用gravity算子来计算边的权重。
 
