@@ -43,7 +43,7 @@
 
 关键在于找到调和方程 u 满足拉普拉斯等式 $\nabla^2u = 0$
 
-3.定义拉普拉斯矩阵：
+3.定义拉普拉斯矩阵：(\begin{cases} tex in all 显示不出。分段函数。隔\看就好)
 
 $L_{ij} = \begin{cases}d_i&&if \ i=j,\\-\omega_{ij} &&if\ v_i\  and\ v_j\ are\ adjacent\ nodes,\\0&&otherwise,\end{cases}$
 
