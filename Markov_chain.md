@@ -22,3 +22,5 @@ v)时间连雪，状态空间在一般情况下
 
 # 静态转移概率（stationary transition probabilities）
 
+![](https://github.com/freyakniglty/SegmentationNotes/blob/master/image/state.png)
+![](https://github.com/freyakniglty/SegmentationNotes/blob/master/image/transitiondiagram.png)
