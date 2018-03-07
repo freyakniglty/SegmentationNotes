@@ -30,7 +30,7 @@ $\alpha [x,y] = \begin{cases} 1&P[x,y] \ge 0.5 \\0&P[x,y]<0.5\end{cases}$
 
 random walks算法最主要的问题是，遇到噪声或纹理，概率会变得有噪音和错误。于是造成了需要更粗糙的透明度遮罩和较不精确的边界。这是因为，如果给一条从种子点到非种子点的最短路径，对每个非种子点概率在这条路径上是递减的。
 
-![]()
+![](https://github.com/freyakniglty/SegmentationNotes/blob/master/image/lowfunctional.png)
 
 在上图。我们需要的是fig.1 或者是fig.2(a)中的分割。但往往由于上述问题分割成不平滑的fig.2(b)
 
@@ -54,7 +54,7 @@ $f(x,y|\sigma_n) = \frac{1}{\sqrt{2\pi\sigma^2_n}}\exp \{\frac{-(x^2+y^2)}{2\sig
 
 我们可以增强random walks 的图像，创建6个连接的图像堆叠在一起。如下图
 
-![]()
+![](https://github.com/freyakniglty/SegmentationNotes/blob/master/image/SSRW.png)
 
 通过对每一层的上下连接，我们可以将没有噪音的粗糙尺度和有噪音的但是更加精确的尺度进行交互。这样就能保证细节的表达以及减少噪声和纹理对分割的影响。
 
