@@ -8,3 +8,5 @@ install :[tex all the thing](https://chrome.google.com/webstore/search/tex?utm_c
 [grady2006random_note](https://github.com/freyakniglty/SegmentationNotes/blob/master/grady2006random_note.md)
 
 [A New Fast Random Walk Segmentation Algorithm_note](https://github.com/freyakniglty/SegmentationNotes/blob/master/A%20New%20Fast%20Random%20Walk%20Segmentation%20Algorithm_note.md)
+
+[Markov_chain(unfinished)](https://github.com/freyakniglty/SegmentationNotes/blob/master/Markov_chain.md)
