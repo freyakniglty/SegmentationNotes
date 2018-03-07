@@ -71,7 +71,7 @@ $D[x_U] = \frac{1}{2}[x_M^Tx_U^T]\begin{bmatrix}L_M&B\\B^T&L_U\end{bmatrix}\begi
 
 这个是线性方程组。
 
-设$x^s_i$ 为点$v_i$ 的标签s的概率。则对于种子点$\begin{frame}\[ m_j^s=\begin{cases}1&if\ s\\0 &if\ not \ s\end{cases}\] \end{frame}$
+设$x^s_i$ 为点$v_i$ 的标签s的概率。则对于种子点$ m_j^s=\begin{cases}1&if\ s\\0 &if\ not \ s\end{cases}$
 
 所以线性方程组又能写成$\boxed{L_Ux^s=-B^Tm^s}$  对一个标签s来说
 
