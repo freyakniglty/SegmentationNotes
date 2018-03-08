@@ -12,7 +12,7 @@
 
 使用DPMMs(Dirichlet Process Mixture Models)的RW方法。
 
-![]()
+![](https://github.com/freyakniglty/SegmentationNotes/blob/master/image/steps.png)
 
 
 
