@@ -47,7 +47,7 @@
 
 $L_{ij} = \begin{cases}d_i&&if \ i=j,\\-\omega_{ij} &&if\ v_i\  and\ v_j\ are\ adjacent\ nodes,\\0&&otherwise,\end{cases}$
 
-$d_i = \sum \omega_ij $ for all $v_j$ connected to $v_i$ 
+$d_i = \sum \omega_{ij} $ for all $v_j$ connected to $v_i$ 
 
 4.定义关联矩阵：
 
